@@ -5,14 +5,19 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Hack:pixelsize=16:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-	"Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true", 
+"Hack Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", 
 };
 
+
 static int borderpx = 2;
+
+/* modkey options: ControlMask, ShiftMask or XK_ANY_MOD */
+static uint url_opener_modkey = XK_ANY_MOD;
+static char *url_opener = "xdg-open";
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -62,6 +67,7 @@ int allowwindowops = 0;
 static double minlatency = 8;
 static double maxlatency = 33;
 
+
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
@@ -72,6 +78,7 @@ static unsigned int blinktimeout = 800;
  * thickness of underline and bar cursors
  */
 static unsigned int cursorthickness = 2;
+
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -144,8 +151,7 @@ static unsigned int defaultrcs = 257;
  * 4: Underline ("_")
  * 6: Bar ("|")
  * 7: Snowman ("☃")
- */
-static unsigned int cursorshape = 2;
+ */static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
@@ -166,6 +172,7 @@ static unsigned int mousebg = 0;
  * doesn't match the ones requested.
  */
 static unsigned int defaultattr = 11;
+
 
 /*
  * Force mouse select/shortcuts while mask is active (when MODE_MOUSE is set).
