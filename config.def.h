@@ -9,11 +9,11 @@ static char *font = "Hack:pixelsize=16:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 /*	"Inconsolata for Powerline:pixelsize=14:antialias=true:autohint=true", */
-"Hack Nerd Font Mono:pixelsize=15:antialias=true:autohint=true", 
+"Hack Nerd Font Mono:pixelsize=16:antialias=true:autohint=true", 
 };
 
 
-static int borderpx = 2;
+static int borderpx = 1;
 
 /* modkey options: ControlMask, ShiftMask or XK_ANY_MOD */
 static uint url_opener_modkey = XK_ANY_MOD;
